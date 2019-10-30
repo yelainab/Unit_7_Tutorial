@@ -18,10 +18,15 @@
 
 /* Hidden Objects */
 
-
+nav.horizontal, footer, aside{
+   display: none;
+}
 
 /* Page Box Styles */
-
+@page{
+   size: 8.5in 11in;
+   margin: 0.5in;
+}
 
 
 /* Header Styles */
@@ -38,21 +43,50 @@ body > header > img {
 
 /* Typography Styles */
 
-
-
+h1{
+   font-size: 28pt;
+   line-height: 30pt;
+   margin: 0.3in 0in 0.2in;
+}
+h2{
+   font-size: 20pt;
+   margin: 0.1in 0in 0.1in 0.3in;
+}
+p{
+   font-size: 12;
+   margin: 0.1in 0in 0.1in 0.3in;
+}
 /* List Styles */
 
-
+ul{
+   list-style-type: disc;
+   margin-left: 0.5in;
+}
 
 /* Image Styles */
 
-
+article img{
+   margin: 0.25in auto;
+   display: block;
+   width: 65%;
+   border: 2px solid rgb(191,191,191);
+}
 
 
 /* Hypertext Styles */
 
+a{
+   text-decoration: none;
+   color: black;
+}
+a::after{
+   content: " (" attr(href)") ";
+   font-weight: bold;
+   word-wrap: break-word;
+}
 
-
+{
+}
 
 
 /* Page Break Styles */
